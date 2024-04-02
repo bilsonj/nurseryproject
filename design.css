@@ -1,0 +1,341 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    /* gap: 40px; */
+  }
+  nav a{
+    text-decoration: none;
+    color: white;
+  }
+  nav a:hover{
+    color: rgb(179, 101, 12);
+    text-decoration: none;
+}
+.Stage{
+    color: blue;
+    text-align: center;
+    padding: 30px;
+}
+ul{
+    list-style: none;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 40px;
+    padding: 0px;
+    margin: 0px;
+    
+  }
+  .checkbtn{
+    position: fixed;
+    left: 95%;
+    top: 5%;
+    display: none;
+    color: white;
+  }
+  #check{
+    position: fixed;
+    left: 90%;
+    top: 5%;
+    display: none;
+    color: white;
+  }
+  nav{
+    background-color: blue;
+  }
+  #check:checked ~ label ~ .heading ~ .nav-links {
+    display: block;
+  }
+
+ 
+.bokai{
+    height: 200px;
+    width: 300px;
+    border:2px solid gray;
+}
+.cards{
+    border:2px solid gray;
+    /* height: 250px;
+    width: 300px; */
+}
+.bokai:hover{
+
+    border-radius: 50px;
+}
+.book{
+    height: 200px;
+    border: 2px solid gray;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsalmon;
+    color: white;
+    margin-top: 180px;
+    margin-left: 60px;
+}
+.bookbtn{
+    border:  none;
+    width: 100px;
+    height: 40px;
+    
+    background:linear-gradient(to right, blue 50%,pink 50%);
+    background-size: 200%,100%;
+    background-position: right;
+    transition: 4s;
+}
+.stageimg {
+width: 900px;
+height: 500px;
+border-radius: 15px;
+
+}
+.model1{
+    animation: ani 3s linear infinite;
+}
+.model2{
+    animation: ani2 3s linear infinite;  
+}
+@keyframes ani {
+    from{
+transform: translateY(20%);
+    }
+    to{
+        transform: translateY(30%);
+    }
+}
+@keyframes ani2 {
+    from{
+transform: translateX(-5%);
+    }
+    to{
+        transform: translateX(-20%);
+    }
+}
+.model3{
+    animation: ani3 3s linear infinite;
+}
+.model4{
+    animation: ani4 3s linear infinite;  
+}
+@keyframes ani3 {
+    from{
+transform: translateX(20%);
+    }
+    to{
+        transform: translateX(30%);
+    }
+}
+@keyframes ani4 {
+    from{
+transform: translateY(-5%);
+    }
+    to{
+        transform: translateY(-20%);
+    }
+}
+.alignpics2{
+    margin-top: 10%;
+    gap: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.model1,.model2,.model3,.model4{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+.alignpics{
+    gap: 180px;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.bookbtn:hover{
+    
+        background-position: left;
+        color: white;
+    
+}
+li:hover {
+
+    color: green;
+
+}
+
+.heading {
+    color: white;
+}
+
+footer {
+    justify-content: space-between;
+}
+
+.footer-continer {
+    color: white;
+    margin-top: 10%;
+}
+
+.line{
+    height: 3px;
+    width: 20px;
+    color: white;
+    background-color: white;
+    margin-bottom: 3px;
+    
+}
+
+
+@media screen and (min-width:300px) and (max-width:500px) {
+.nav-links{
+    display: none;
+ 
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:transparent;
+    
+}
+ul{
+    list-style: none;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px;
+    margin: 0px;
+    
+  }
+    #check{
+        position: fixed;
+        left: 70%;
+        top: 5%;
+
+        /* display: block; */
+      }
+      .checkbtn{
+        position: fixed;
+        top: 15%;
+        left: 90%;
+        margin-top: -50px;
+        color:white;
+        display: block;
+      }
+      .heading{
+        align-self: self-start;
+      }
+      .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .bokai{
+        width: 180px;
+      }
+      .dec-booking{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      .stageimg{
+width: 300px;
+object-fit: cover;
+      }
+      .book{
+        margin: 0px;
+      }
+      .alignpics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+      }
+      .model1,.model2,.model3,.model4{
+        width: 250px;
+      }
+      .model2{
+        margin-left: 40px;
+      }
+
+      .alignpics2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+      }
+      .model3{
+        margin-left: -100px;
+      }
+      footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .fun-continer {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:800px) {
+.navbar{
+  width: 100%;
+  /* width: 114%; */
+}
+.bokai{
+  width: 200px;
+}
+.cards{
+  width: 100%;
+}
+.dec-booking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.stageimg{
+  width: 100%;
+}
+.book{
+  width: 300px;
+  margin: 0px;
+}
+.model1,.model2,.model3,.model4{
+  width: 200px;
+}
+.model3{
+  margin-top: 20px;
+}
+footer {
+  width: 100%;
+  display: flex;
+  font-size: smaller;
+  font-weight: lighter;
+  
+  
+  
+}
+.footer-continer{
+  display: flex;
+  width: 100%;
+}
+
+}
