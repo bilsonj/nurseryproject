@@ -3,13 +3,28 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+nav a{
+    text-decoration: none;
+    color: white;
+  }
+  nav a:hover{
+    color: rgb(179, 101, 12);
+    text-decoration: none;
+}
 .nav-links {
     display: flex;
     color: white;
     justify-content: space-around;
     /* gap: 40px; */
   }
+  footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(179, 101, 12);
+    text-decoration: none;
+}
 
 .Stage{
     color: blue;
@@ -155,10 +170,10 @@ footer {
             /* display: block; */
           }
           .checkbtn{
-            position: fixed;
+            position: sticky;
             top: 15%;
             left: 90%;
-            margin-top: -50px;
+            /* margin-top: -50px; */
             color:white;
             display: block;
           }

@@ -61,6 +61,14 @@ ul{
     width: 300px;
     border:2px solid gray;
 }
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+  color: rgb(179, 101, 12);
+  text-decoration: none;
+}
 .cards{
     border:2px solid gray;
     /* height: 250px;
@@ -229,10 +237,10 @@ ul{
         /* display: block; */
       }
       .checkbtn{
-        position: fixed;
+        position: sticky;
         top: 15%;
         left: 90%;
-        margin-top: -50px;
+        /* margin-top: -50px; */
         color:white;
         display: block;
       }
